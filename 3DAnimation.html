@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+        }
+
+        header {
+            background: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 2rem;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            section:hover {
+                transform: scale(1.02);
+            }
+
+        h2 {
+            color: #1565c0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background: #1e88e5;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .quiz {
+            margin-top: 20px;
+            padding: 20px;
+            background: #d1c4e9;
+            border-radius: 8px;
+            color: black;
+        }
+
+            .quiz button {
+                background-color: #9575cd;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                .quiz button:hover {
+                    background-color: #7e57c2;
+                }
+    </style>
+    <script>
+        function checkAnswer() {
+            let answer = document.getElementById("quiz-answer").value.toLowerCase();
+            let result = document.getElementById("quiz-result");
+            let correctAnswers = ["blender", "maya", "3ds max", "cinema 4d", "unreal engine"];
+
+            if (correctAnswers.includes(answer)) {
+                result.innerHTML = "Correct! " + answer.charAt(0).toUpperCase() + answer.slice(1) + " is a well-known 3D animation software.";
+                result.style.color = "green";
+            } else {
+                result.innerHTML = "Incorrect! Try again.";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>Explore the World of 3D Animation</header>
+
+    <section>
+        <h2>Introduction to 3D Animation</h2>
+        <p>3D Animation is the process of creating moving images in a three-dimensional digital environment. It is widely used in movies, video games, advertisements, and simulations. Unlike 2D animation, 3D animation provides depth and realism to characters and environments.</p>
+    </section>
+
+    <section>
+        <h2>How It Works</h2>
+        <p>The process of 3D animation consists of several key stages:</p>
+        <ul>
+            <li><b>Modeling:</b> Creating 3D objects and characters using software.</li>
+            <li><b>Rigging:</b> Adding a skeleton structure to models for movement.</li>
+            <li><b>Texturing:</b> Applying colors and details to enhance realism.</li>
+            <li><b>Animation:</b> Making objects move using keyframes and motion capture.</li>
+            <li><b>Rendering:</b> Converting 3D models into final images or videos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Popular Software</h2>
+        <p>Several powerful tools are used in 3D animation, including:</p>
+        <ul>
+            <li><b>Blender:</b> Open-source and widely used for various animations.</li>
+            <li><b>Maya:</b> Industry-standard software for films and gaming.</li>
+            <li><b>3ds Max:</b> Popular for architectural visualization and effects.</li>
+            <li><b>Cinema 4D:</b> Known for motion graphics and easy usability.</li>
+            <li><b>Unreal Engine:</b> Used in real-time animation and gaming.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Industry Applications</h2>
+        <p>3D animation is used across multiple industries:</p>
+        <ul>
+            <li><b>Movies:</b> Bringing fantasy and sci-fi to life with CGI.</li>
+            <li><b>Video Games:</b> Creating immersive and interactive experiences.</li>
+            <li><b>Advertising:</b> Making engaging and visually appealing commercials.</li>
+            <li><b>Architecture:</b> Visualizing buildings before construction.</li>
+            <li><b>Virtual Reality:</b> Enhancing simulations and immersive experiences.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Future Trends</h2>
+        <p>The future of 3D animation is evolving with new technologies:</p>
+        <ul>
+            <li><b>Artificial Intelligence:</b> AI-driven animation reduces workload and enhances realism.</li>
+            <li><b>Real-time Rendering:</b> Faster and more efficient production with tools like Unreal Engine.</li>
+            <li><b>Virtual Production:</b> Combining live-action and CGI for seamless visuals.</li>
+            <li><b>Augmented Reality:</b> Merging digital objects into the real world.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Resources & Tutorials</h2>
+        <p>Want to learn 3D animation? Check out these resources:</p>
+        <ul>
+            <li><a href="https://www.blender.org/" target="_blank">Blender Official Site</a></li>
+            <li><a href="https://www.autodesk.com/products/maya/overview" target="_blank">Maya by Autodesk</a></li>
+            <li><a href="https://www.unrealengine.com/en-US/" target="_blank">Unreal Engine</a></li>
+            <li><a href="https://www.cgtrader.com/" target="_blank">CGTrader for 3D Models</a></li>
+        </ul>
+    </section>
+
+    <section class="quiz">
+        <h2>Quiz: Test Your Knowledge</h2>
+        <p>What is a popular 3D animation software?</p>
+        <input type="text" id="quiz-answer" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="quiz-result"></p>
+    </section>
+    <div class="footer">&copy; 2025 3D Animation - Amina Mahmoud</div>
+</body>
+</html>
+
+<section>
+    <h2>References</h2>
+    <ul>
+        <li><a href="https://www.blender.org/" target="_blank">Blender Official Site</a></li>
+        <li><a href="https://www.autodesk.com/products/maya/overview" target="_blank">Maya by Autodesk</a></li>
+        <li><a href="https://www.unrealengine.com/en-US/" target="_blank">Unreal Engine</a></li>
+        <li><a href="https://www.cgtrader.com/" target="_blank">CGTrader for 3D Models</a></li>
+        <li><a href="https://www.artstation.com/" target="_blank">ArtStation</a></li>
+        <li><a href="https://www.turbosquid.com/" target="_blank">TurboSquid for 3D Models</a></li>
+    </ul>
+</section>
